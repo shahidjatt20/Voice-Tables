@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz"
+    android:background="@drawable/quiz">
+    <ScrollView
+        android:id="@+id/scroolview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <FrameLayout
+            android:id="@+id/native_container"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/loe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+        <TextView
+            android:id="@+id/addition"
+            android:layout_width="165dp"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="Addittion Quiz"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/subtraction"
+            android:layout_width="165dp"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="Subtraction Quiz"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/multiplication"
+            android:layout_width="165dp"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimary"
+            android:text="Multiplication Quiz"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/division"
+            android:layout_width="165dp"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimary"
+            android:text="Division Quiz"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/mix"
+            android:layout_width="335dp"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="Mix Quiz"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

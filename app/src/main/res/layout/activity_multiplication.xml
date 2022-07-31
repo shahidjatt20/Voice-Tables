@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".multiplication"
+    android:background="@drawable/quizz">
+    <TextView
+        android:id="@+id/mutipl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Multiplication Quiz"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/qustion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q:1/10"
+        android:textSize="25sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/number1"
+        android:layout_below="@+id/mutipl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="12"
+        android:textSize="60dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/addi"
+        android:layout_below="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="X"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/number2"
+        android:layout_below="@+id/addi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="12"
+        android:textSize="60dp"
+        android:textColor="@color/black"
+        />
+    <View
+        android:layout_below="@+id/number2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/black"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linear0"
+        android:layout_above="@id/startAppBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/number2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/optn1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/optn2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number3"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/optn3"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/optn4"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

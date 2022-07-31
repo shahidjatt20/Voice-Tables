@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Teconz.voicetables">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.Ad_ID" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/splash"
+        android:label="@string/app_name"
+        tools:replace="android:fullBackupContent"
+        android:networkSecurityConfig="@xml/security"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@drawable/splash"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/custom_theme"
+        tools:targetApi="31">
+        <activity
+            android:name=".result"
+            android:exported="false" />
+        <activity
+            android:name=".mix"
+            android:exported="false" />
+        <activity
+            android:name=".division"
+            android:exported="false" />
+        <activity
+            android:name=".multiplication"
+            android:exported="false" />
+        <activity
+            android:name=".subtraction"
+            android:exported="false" />
+        <activity
+            android:name=".addition"
+            android:exported="false" />
+        <activity
+            android:name=".quiz"
+            android:exported="false" />
+        <activity
+            android:name=".main"
+            android:exported="false" />
+        <activity
+            android:name=".tables"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.startapp.sdk.APPLICATION_ID"
+            android:value="@string/AppId" />
+
+        <meta-data android:name="com.startapp.sdk.RETURN_ADS_ENABLED"
+            android:value="false" />
+
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/AppId"/>
+
+    </application>
+
+</manifest>

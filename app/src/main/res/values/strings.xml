@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Voice Tables</string>
+
+    <string name="AppId">206523396</string>
+    //.......test ads ids
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_native_id">ca-app-pub-3940256099942544/2247696110</string>
+
+
+<!--    //.......original ads ids-->
+<!--    <string name="admob_banner_id">ca-app-pub-1258513348203161/4556869059</string>-->
+<!--    <string name="admob_interstitial_id">ca-app-pub-1258513348203161/9426052354</string>-->
+<!--    <string name="admob_native_id">ca-app-pub-1258513348203161/5068004947</string>-->
+
+</resources>

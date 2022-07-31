@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Feedback!"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/enter"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Feedback Here!"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_below="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/cncel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Cancel"
+            />
+        <Button
+            android:id="@+id/submit"
+            android:layout_below="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Submit"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

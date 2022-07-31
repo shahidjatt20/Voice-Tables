@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/log"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/splash"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log"
+        android:layout_centerHorizontal="true"
+        android:text="How was your Experience"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/rate"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <LinearLayout
+        android:layout_below="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/cncl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Cancel"
+            />
+    <Button
+        android:id="@+id/exit"
+        android:layout_below="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="EXIT APP"
+        android:layout_marginLeft="20dp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>
